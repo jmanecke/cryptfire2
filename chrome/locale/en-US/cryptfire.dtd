@@ -1,0 +1,8 @@
+<!ENTITY CF.Encrypt "Encrypt Selection">
+<!ENTITY CF.Decrypt "Decrypt Selection">
+<!ENTITY CF.Encrypt.Link "Encrypt Selection as Link">
+<!ENTITY CF.Encrypt.Stego "Encrypt Selection as Text">
+<!ENTITY CF.Forget.Context "Forget CryptFire Password">
+<!ENTITY CF.Visit "Visit CryptFire.com">
+<!ENTITY CF.Forget.Menu "Forget Password">
+<!ENTITY CF.CryptFire "CryptFire">

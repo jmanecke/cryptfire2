@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://cryptfire/skin/overlay.css" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://cryptfire/locale/cryptfire.dtd">
+<overlay id="cryptfire-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+    <script src="cryptfire.js"/>
+  
+    <popup id="contentAreaContextMenu"> 
+                <menuseparator/>
+                <menuitem id="quick-decrypt" label="&CF.Decrypt;" oncommand="cryptfire.decrypt();" />
+                <menuseparator/>
+                <menuitem id="quick-encrypt" label="&CF.Encrypt;" oncommand="cryptfire.encrypt();" insertafter="quick-decrypt" />
+                <menuitem id="quick-encrypt-link" label="&CF.Encrypt.Link;" oncommand="cryptfire.encryptAsLink();" insertafter="quick-encrypt" />
+                <menuitem id="quick-encrypt-stego" label="&CF.Encrypt.Stego;" oncommand="cryptfire.encryptAsText();" insertafter="quick-encrypt-link" />
+                <menuseparator/>
+                <menuitem id="cf-forget" label="&CF.Forget.Context;" oncommand="cryptfire.forget();"/>
+                <menuseparator/>
+                <menuitem id="cf-visit" label="&CF.Visit;" oncommand="cryptfire.visit();"/>
+        
+    </popup>
+    
+    <menu id="tools-menu" label="Tools" accesskey="T">
+        <menupopup id="menu_ToolsPopup">
+            <menu id="menu_cryptfire" class="menuitem-iconic" label="&CF.CryptFire;" insertbefore="javascriptConsole">
+                <menupopup>
+                    <menuitem id="cf-forget" label="&CF.Forget.Menu;" oncommand="cryptfire.forget();"/>
+                    <menuseparator/>
+                    <menuitem id="cf-visit" label="&CF.Visit;" oncommand="cryptfire.visit();"/>
+                </menupopup>
+            </menu>
+        
+    </menupopup>
+</menu>
+    
+</overlay>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<RDF:RDF xmlns:em="http://www.mozilla.org/2004/em-rdf#"
+         xmlns:NC="http://home.netscape.com/NC-rdf#"
+         xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+    <RDF:Description RDF:about="urn:mozilla:install-manifest">
+        <em:name>cryptfire</em:name>
+        <em:version>1.0</em:version>
+        <em:id>cryptfire@cryptfire.com</em:id>
+        <em:description>Easily encrypt and decrypt any selected text with a password using secure AES algorithm. Features include encrypt-to-link and steganography. </em:description>
+        <em:creator>Mike Bellwick</em:creator>
+        <em:homepageURL>http://cryptfire.com/</em:homepageURL>
+<em:targetApplication>
+<!-- Mozilla Firefox -->
+	<RDF:Description>
+		<em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id>
+		<em:minVersion>3.0</em:minVersion>
+		<em:maxVersion>3.5.*</em:maxVersion>
+	</RDF:Description>
+</em:targetApplication>
+
+
+        <em:file>
+         <RDF:Description about="urn:mozilla:extension:file:cryptfire.jar">
+            <em:package>content/</em:package>
+            <em:locale>locale/en-US/</em:locale>
+            <em:skin>skin/</em:skin>
+        </RDF:Description>
+       </em:file>
+    </RDF:Description>
+</RDF:RDF>
