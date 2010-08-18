@@ -1,0 +1,17 @@
+Cryptfire2 - udpate of cryptfire 1.0 firefox plugin
+javascript tools to support encryption in the browser
+the heavy lifting crypto stuff is done by javascrypt
+
+planned things to do (from concrete to mushy)
+- make it install to latest version of firefox (3.6.x) - done
+- remove the dependency on the cryptfire.com website which doesn't exist anymore
+- fully test functionality and remove/fix what doesn't work
+- fix it so encrypting or decrypting something doesn't overwrite your clipboard
+- add a retype-password option when encrypting to make sure you entered the password you wanted
+- think about using other encryption keys - keyfile, smartcards, etc.
+- think about UI-type ways to make it better
+- who knows what else...
+
+cryptfire 1.0 - https://addons.mozilla.org/en-US/firefox/addon/12343/
+javascrypt - http://fourmilab.ch/javascrypt/
+
